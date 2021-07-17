@@ -1,6 +1,6 @@
 import React from 'react';
 import {Cart, SearchBar} from './component';
-import data from './assets/data/data.json';
+import data from './data/data.json';
 import {SafeAreaView, Text, FlatList, StyleSheet} from 'react-native';
 
 const App = () => {
