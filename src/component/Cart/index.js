@@ -1,14 +1,14 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet, Dimensions} from 'react-native';
 
-const Cart = ({products}) => {
+const Cart = ({product}) => {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={{uri: products.imgURL}} />
+      <Image style={styles.image} source={{uri: product.imgURL}} />
       <View style={styles.innerContainer}>
-        <Text style={styles.title}>{products.title}</Text>
-        <Text style={styles.price}>{products.price}</Text>
-        {products.inStock === false ? (
+        <Text style={styles.title}>{product.title}</Text>
+        <Text style={styles.price}>{product.price}</Text>
+        {product.inStock === false ? (
           <Text style={styles.inStock}>Stokta Yok</Text>
         ) : null}
       </View>
